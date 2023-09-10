@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family:sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    width: 100vw;
+    height: auto;
+    background: #f2f2f2;
+}
+.displayC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.displayR{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*--header--*/
+.header{
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 11vh;
+    width: 100%;
+    background-color: #333;
+}
+.nav{
+    width: 78%;
+}
+.nav ul{
+    width: 42%;
+    list-style-type: none;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/*section-1*/
+
+.Homepage{
+    position: relative;
+    background: url(./family-camping-at-sunset.jpg);
+    background-position: center 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.Homepage::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.Homepage .infoBanner{
+    display: flex;
+    z-index: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8vh;
+}
+.Homepage .p{
+    text-align: center;
+}
+.infoBanner h1{
+    font-size: 3.6em;
+    font-weight: 800;
+    color: white;
+}
+.infoBanner p{
+    font-size: 1.4em;
+    color: white;
+}
+.infoBanner input{
+    margin-top: 4vh;
+    padding: 2vh 4vh;
+    font-size: 1em;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+.side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0 0;
+}
+section .cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 50px;
+    padding: 0 10px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+section .cards .card{
+    width: 350px;
+    height: 44vh;
+    margin-bottom: 6vh;
+    background-color: white;
+    display: flex;
+    padding: 3% 2% 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1)
+}
+.card img{
+    height: 40%;
+    width: 36%;
+    border-radius: 50%;
+}
+.card p{
+    text-align: center;
+    line-height: 1.5;
+}
+.side a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight:800;
+}
+/*about us*/
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.AboutUs .container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AboutUs .container .infoServices{
+    text-align: center;
+    margin-bottom: 8vh;
+}
+.description h3{
+    font-size: 1.2em;
+    margin-bottom: 2vh;
+}
+.description p{
+    font-size: 1.15em;
+    margin-bottom: 4vh;
+}
+.description .team ul{
+    margin-left: 1.6%;
+    font-size: 1.15em;
+}
+/*Contact Uu*/
+
+.ContactUs .infoContact{
+    text-align: center;
+    margin-bottom: 8vh;
+
+}
+.ContactUs .row{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    margin-bottom: 12vh;
+    align-items: center;
+}
+.ContactUs form{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.ContactUs .form input{
+    padding: 4px 2% ;
+    width:540px;
+    height: 6vh;
+    font-size: 1.05em;
+}
+.ContactUs .form textarea{
+    padding: 6px 2% ;
+    width:540px;
+    height: 18vh;
+    font-size: 1.05em;
+}
+.ContactUs .form button{
+    padding: 4px 2px ;
+    width:160px;
+    height: 6vh;
+    font-size: 1.05em;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+}
+.ContactUs .row .Accounts{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 1.1em;
+}
+.ContactUs .row .Accounts p img{
+    height: 24px;
+    width: 24px;
+}
+.infoBanner input{
+    cursor: pointer;
+}
+.infoBanner input:hover {
+    color: #fff;
+    background: transparent;
+    border: 2px solid white;
+
+  }
+
+
+
+
+
